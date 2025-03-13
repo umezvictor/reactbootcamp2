@@ -1,0 +1,57 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.vs/toyingroup-erp-ui/FileContentIndex/0c78a21b-1276-48e6-a0f3-2f394dfd69f0.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/b05b7523-d03c-4cfe-9244-391282fc5cdd.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/4cee73c5-0143-42a4-a9d0-dc264c249ee0.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/25551372-6f53-448b-ad2f-2773aca08947.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/6ce58788-fb7d-427f-a4ba-c4e0448498fb.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/76fac086-83e9-43fd-88b0-9171653d3b34.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/bd9c027f-8658-4cb1-881f-1e3e97421b7b.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/c903e10a-2f05-44eb-aab4-7090a594fdae.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/65351240-f804-49e9-89cd-1c5384793838.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/12743b32-a3fb-4f4c-aa11-2d26de9b74e5.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/9acbbf8a-d1a9-44bf-b218-80e27a3789f8.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/51a42141-c1ce-48e3-9bb4-ac21c3552363.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/d6321b96-21dd-4f40-a7a8-55c80f6a5a8c.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/b48fe5b0-319f-4aad-8ad2-2ad028bd8d8d.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/e24c0430-4bb8-4d11-a6ea-308c5c40d3fb.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/a686098c-6e95-4f85-9bcd-0f2b3e0bb0db.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/d8ffa4de-21b8-42fd-b3ad-115826cb19ef.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/e86b6988-d945-477f-8031-e10647d62190.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/6f0b0af0-8bba-4e9e-a476-259dbc55658c.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/e76709eb-522b-472c-8205-8c61b28102af.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/e20468de-2cf6-4a00-824c-847eb0069acc.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/2c4901e6-b104-4138-8bde-c49112016024.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/adae73db-dd5c-41d2-b7d2-a5d70ddf1c6d.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/31c2d8ee-35c5-4ed1-9daa-1bf45b99649e.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/dd3fdbc5-b07c-4a8e-aafd-f2a1d35fdb20.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/184398ea-7b4d-468a-91a9-5ce239302965.vsidx
+/.vs/toyingroup-erp-ui/FileContentIndex/4f896095-212d-4f83-a4b4-feb371ecb479.vsidx
+*.vsidx
+*.lock
+/.vs/toyingroup-erp-ui/v17/.wsuo
+/.vs/slnx.sqlite
+/.vs/toyingroup-erp-ui/v17/workspaceFileList.bin
+/.vs/VSWorkspaceState.json
