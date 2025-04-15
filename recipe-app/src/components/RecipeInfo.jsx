@@ -1,18 +1,10 @@
-export default function RecipeInfo({ instructions, image }) {
+import { Outlet } from "react-router-dom";
+
+export default function RecipeInfo({ instructions, image, ingredients }) {
   return (
     <div className="recipe-info">
-      <div className="recipe-info-container">
-        <div className="recipe-info-header">
-          <h3>Instructions</h3>
-          {instructions.map(({ display_text, position }) => (
-            <div className="recipe-info-content-container" key={position}>
-              <p className="recipe-step">{position}</p>
-              <p className="recipe-text">{display_text}</p>
-            </div>
-          ))}
-        </div>
-        <img className="recipe-img" src={image} alt="" />
-      </div>
+      <Outlet context={{ instructions, ingredients }} />
+      <img className="recipe-img" src={image} alt="" />
     </div>
   );
 }

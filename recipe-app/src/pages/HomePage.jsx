@@ -3,13 +3,17 @@ import CardList from "../components/CardList";
 import Header from "../components/Header";
 import Loading from "../components/Loading";
 import useFetchRecipes from "../hooks/useFetchRecipes";
+import { useSearchParams } from "react-router-dom";
 
 export default function HomePage() {
   //get the data from the custom hook here - cleaner approach
   const [fetchRecipes, { data, loading, error }] = useFetchRecipes();
 
+  //get query params
+  const [searchParams] = useSearchParams();
+
   useEffect(() => {
-    fetchRecipes();
+    fetchRecipes(searchParams.get("search"));
   }, []);
 
   const handleSearch = (searchText) => {

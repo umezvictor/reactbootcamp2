@@ -2,9 +2,18 @@ import { useState } from "react";
 
 function Header({ handleSearch }) {
   const [searchText, setSearchText] = useState("");
+  const [_, setSearchParams] = useState("");
+  //const [searchParams, setSearchParams] = useState("");
+  //used underscore since am not using the searchParams
 
   const handleClick = () => {
     handleSearch(searchText);
+    if (searchText) {
+      //create query params
+      setSearchParams({
+        search: searchText,
+      });
+    }
     setSearchText("");
   };
 

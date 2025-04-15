@@ -1,11 +1,12 @@
-import { useParams } from "react-router-dom";
-import useFetchRecipe from "../hooks/useFetchRecipe";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import RecipeHeader from "../components/RecipeHeader";
+import useFetchRecipe from "../hooks/useFetchRecipe";
 import Loading from "../components/Loading";
 import RecipeInfo from "../components/RecipeInfo";
+import Error from "../components/Error";
+
 export default function RecipePage() {
-  //get id from url query param
   const { id } = useParams();
   const [fetchRecipe, { data, loading, error }] = useFetchRecipe();
 
@@ -15,6 +16,7 @@ export default function RecipePage() {
 
   if (loading) return <Loading />;
   if (error) return <h1>{error}</h1>;
+  if (data?.errors) return <Error explanation="Recipe not found" />;
 
   return (
     <div>
@@ -24,6 +26,7 @@ export default function RecipePage() {
           <RecipeInfo
             instructions={data.instructions}
             image={data.thumbnail_url}
+            ingredients={data.sections[0].components}
           />
         </>
       )}
